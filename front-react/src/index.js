@@ -1,14 +1,16 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import App from './App'; //import component from App file (with App name)
-import {Router ,Route , Link , browserHistory} from 'react-router'
-import Header from './Header';
+import {Router ,Route , browserHistory} from 'react-router'
 import Content from './Content';
-import Footer from './Footer';
+import Navigation from './Navigation';
+import FindArticle from './FindArticle';
+import Matching from './Matching';
+import CreateArticle from './CreateArticle';
+
 
 import 'bootstrap/dist/css/bootstrap.min.css';
-import $ from 'jquery';
-import Popper from 'popper.js';
+
 import 'bootstrap/dist/js/bootstrap.bundle.min';
 
 
@@ -17,10 +19,12 @@ ReactDOM.render(
 
     <Router history={browserHistory}>
     <Route path="/" component={App}/>
-    <Route path="/header" component={Header}/>
     <Route path="/content" component={Content}/>
+    <Route path="/Navigation" component={Navigation}/>
+    <Route path="/FindArticle" component={FindArticle}/>
+    <Route path="/Matching" component={Matching}/>
+    <Route path="/CreateArticle" component={CreateArticle}/>
 
-    <Route path="/footer" component={Footer}/>
     </Router>
 
     , document.getElementById('root')

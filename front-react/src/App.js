@@ -1,8 +1,5 @@
 import React, { Component } from 'react';
-import Header from './Header';
-import Content from './Content';
-import Footer from './Footer';
-import {Button , Nav ,NavDropdown } from 'react-bootstrap'
+import Navigation from './Navigation';
 
 
 class App extends Component {
@@ -11,17 +8,26 @@ class App extends Component {
     super();
     this.state={
         data:[],
+        isOpen: false,
         message:"Un Like",
         type:""
     };
     this.changeMessage=this.changeMessage.bind(this);
+
+    this.toggleCollapse=this.toggleCollapse.bind(this);
     // this.insertData=this.insertData.bind(this);
   }
-
+ 
+  
+  toggleCollapse = () => {
+    this.setState({ isOpen: !this.state.isOpen });
+  }
   
   changeMessage(){
       this.setState({message:"Like"});
   }
+
+
   // insertData(){
   //   var item = "React";
   //   var myArray = this.state.data;
@@ -42,41 +48,19 @@ class App extends Component {
     return (
       <div>
 
-<Nav variant="pills" activeKey="1" onSelect={k => this.handleSelect(k)}>
-        <Nav.Item>
-          <Nav.Link eventKey="1" href="#/home">
-            NavLink 1 content
-          </Nav.Link>
-        </Nav.Item>
-        <Nav.Item>
-          <Nav.Link eventKey="2" title="Item">
-            NavLink 2 content
-          </Nav.Link>
-        </Nav.Item>
-        <Nav.Item>
-          <Nav.Link eventKey="3" disabled>
-            NavLink 3 content
-          </Nav.Link>
-        </Nav.Item>
-        <NavDropdown title="Dropdown" id="nav-dropdown">
-          <NavDropdown.Item eventKey="4.1">Action</NavDropdown.Item>
-          <NavDropdown.Item eventKey="4.2">Another action</NavDropdown.Item>
-          <NavDropdown.Item eventKey="4.3">
-            Something else here
-          </NavDropdown.Item>
-          <NavDropdown.Divider />
-          <NavDropdown.Item eventKey="4.4">Separated link</NavDropdown.Item>
-        </NavDropdown>
-      </Nav>
-
+<Navigation />
 
          
 
         <h1>Hello World</h1>
-        <h1><a href="/Header">Header</a></h1>
         <h1><a href="/Content">Content</a></h1>
-        <h1><a href="/Footer">Footer</a></h1>
-        <h1><a href="/">Home</a></h1>
+
+
+        <h1><a href="/FindArticle">Find Article</a></h1>
+
+        <h1><a href="/Matching">Matching</a></h1>
+
+        <h1><a href="/CreateArticle">Create Article</a></h1>
 
         <h1>{this.state.message}</h1><br/>
     
@@ -85,23 +69,14 @@ class App extends Component {
 
         <button type="button" class="btn btn-outline-primary" onClick={this.changeMessage}>{this.state.message}</button><br/>
 
-        <Button variant="primary">Primary</Button>
-  <Button variant="secondary">Secondary</Button>
-  <Button variant="success">Success</Button>
-  <Button variant="warning">Warning</Button>
-  <Button variant="danger">Danger</Button>
-  <Button variant="info">Info</Button>
-  <Button variant="light">Light</Button>
-  <Button variant="dark">Dark</Button>
-
+   
+        
          
           </div>
 
 
-        // <Header />
-        //  <Content title = "Practice " name = "Aew" />
-        // <Footer />
-        
+//<Header />
+        //  <Content title = "Practice " name = "Aew" />        
      
         
 
