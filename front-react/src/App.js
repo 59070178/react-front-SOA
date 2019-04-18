@@ -1,5 +1,7 @@
 import React, { Component } from 'react';
 import Navigation from './Navigation';
+import {Image} from 'react-bootstrap';
+
 
 
 class App extends Component {
@@ -50,7 +52,8 @@ class App extends Component {
 
 <Navigation />
 
-         
+<img src={require('./assets/image/home-banner.jpg')} 
+resizeMode = 'cover'  />
 
         <h1>Hello World</h1>
         <h1><a href="/Content">Content</a></h1>
@@ -68,8 +71,6 @@ class App extends Component {
 
 
         <button type="button" class="btn btn-outline-primary" onClick={this.changeMessage}>{this.state.message}</button><br/>
-
-   
         
          
           </div>
