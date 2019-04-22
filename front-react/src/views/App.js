@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
-import Navigation from './Navigation';
-import {Image} from 'react-bootstrap';
+import Navigation from '../components/Navigation';
+import image from "../assets/image/home-banner.jpg";
 
 
 
@@ -52,8 +52,8 @@ class App extends Component {
 
 <Navigation />
 
-<img src={require('./assets/image/home-banner.jpg')} 
-resizeMode = 'cover'  />
+<img src={image} />
+
 
         <h1>Hello World</h1>
         <h1><a href="/Content">Content</a></h1>
@@ -64,6 +64,7 @@ resizeMode = 'cover'  />
         <h1><a href="/Matching">Matching</a></h1>
 
         <h1><a href="/CreateArticle">Create Article</a></h1>
+
 
         <h1>{this.state.message}</h1><br/>
     
