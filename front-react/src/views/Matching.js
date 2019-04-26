@@ -4,6 +4,20 @@ import '../components/create.css';
 
 class Matching extends Component{
 
+  constructor( props){
+    super (props)
+      this.state = {show : false}
+
+      this.showResult = this.showResult.bind(this)
+   
+    }
+
+    showResult = () => {
+      const { show } = this.state;
+      this.setState ( { show : !show })
+    }
+
+
   render(){
     return(
 
@@ -178,15 +192,22 @@ class Matching extends Component{
                 </form>
               </div> 
              
-              <div className="col-lg-12 text-center">
+              <div className="col-lg-12 ">
               <br></br>
 
               <br></br>
 
               <br></br>
-                <button className="primary-btn">ค้นหา</button>
+                <button className="primary-btn" onClick={ this.showResult}>ค้นหา</button>
+                <br></br>
+      <br></br>
+                { this.state.show && <Result />} 
+
               </div>
             </div>
+
+
+            
       
       </section> 
 
@@ -195,6 +216,40 @@ class Matching extends Component{
     );
   }
 
+}
+
+class Result extends Component {
+
+  render(){
+    return(
+
+      
+
+      <div class="container-fluid">
+	<div class="row">
+		<div class="col-md-12">
+			
+				
+				<div class="list-group-item">
+					<h4 class="list-group-item-heading">
+          วิชา SE
+
+ 					</h4>
+           <div class="list-group-item">
+           อ่านบทความเกี่ยวกับวิชานี้
+
+           <p>
+				<a class="btn" href="#">View details »</a>
+			</p>
+				</div>
+        
+				</div>
+			</div>
+	
+	</div>
+</div>
+    )
+  }
 }
 
   export default Matching;
