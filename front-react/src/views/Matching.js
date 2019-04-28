@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
 import Navigation from '../components/Navigation';
+import StarRatingComponent from 'react-star-rating-component';
 import '../components/create.css';
+import Star from '../components/star'
 
 class Matching extends Component{
 
@@ -22,8 +24,8 @@ class Matching extends Component{
     return(
 
       <div>
-
 <Navigation />
+
 <br></br>
    <br></br>
 
@@ -57,7 +59,7 @@ class Matching extends Component{
       <div className="container">
         <div className="register_form">
         <center>
-          <h3><font face="Fc active" size={17}>ค้นหาวิชาที่เหมาะกับฉัน</font></h3></center>
+          <h3><font face="Fc active" size={8}>ค้นหาวิชาที่เหมาะกับฉัน</font></h3></center>
           <form className="form_area" id="myForm"  method="post"> 
           {/* action="mail.html" */}
            
@@ -66,7 +68,10 @@ class Matching extends Component{
                     <label htmlFor="name">มีงานเดี่ยว / งานกลุ่ม</label>
                   </div>
                   <div className="col-75">
-                    <select id="้homework" name="้homework">
+
+                  <Star />
+
+                    {/* <select id="้homework" name="้homework">
                       <option value="้homework1">1</option>
                       <option value="้homework2">2</option>
                       <option value="้homework3">3</option>
@@ -77,7 +82,7 @@ class Matching extends Component{
                       <option value="้homework8">8</option>
 
 
-                    </select>
+                    </select> */}
                   </div>
                 </div>
                 <div className="row">
@@ -85,7 +90,10 @@ class Matching extends Component{
                     <label htmlFor="name">มีสอบกลางภาค</label>
                   </div>
                   <div className="col-75">
-                    <select id="midterm" name="midterm">
+
+                  <Star />
+
+                    {/* <select id="midterm" name="midterm">
                     <option value="้midterm1">1</option>
                       <option value="้midterm2">2</option>
                       <option value="้midterm3">3</option>
@@ -94,7 +102,7 @@ class Matching extends Component{
                       <option value="้midterm6">6</option>
                       <option value="้midterm7">7</option>
                       <option value="้midterm8">8</option>
-                    </select>
+                    </select> */}
                   </div>
                 </div>
 
@@ -103,7 +111,10 @@ class Matching extends Component{
                     <label htmlFor="name">เช็คชื่อ / เข้าเรียน</label>
                   </div>
                   <div className="col-75">
-                    <select id="check" name="check">
+
+                  <Star />
+
+                    {/* <select id="check" name="check">
                     <option value="้check1">1</option>
                       <option value="้check2">2</option>
                       <option value="้check3">3</option>
@@ -112,7 +123,7 @@ class Matching extends Component{
                       <option value="้check6">6</option>
                       <option value="้check7">7</option>
                       <option value="้check8">8</option>
-                    </select>
+                    </select> */}
                   </div>
                 </div>
             
@@ -121,7 +132,9 @@ class Matching extends Component{
                     <label htmlFor="name">สุ่มเกรด</label>
                   </div>
                   <div className="col-75">
-                    <select id="random" name="random">
+                  <Star />
+
+                    {/* <select id="random" name="random">
                     <option value="้random1">1</option>
                       <option value="้random2">2</option>
                       <option value="้random3">3</option>
@@ -130,7 +143,7 @@ class Matching extends Component{
                       <option value="้random6">6</option>
                       <option value="้random7">7</option>
                       <option value="้random8">8</option>
-                    </select>
+                    </select> */}
                   </div>
                 </div>
 
@@ -140,7 +153,9 @@ class Matching extends Component{
                     <label htmlFor="name">ความยากของเนื้อหา</label>
                   </div>
                   <div className="col-75">
-                    <select id="้hard" name="้hard">
+                  <Star />
+
+                    {/* <select id="้hard" name="้hard">
                     <option value="้้hard1">1</option>
                       <option value="้้hard2">2</option>
                       <option value="้้hard3">3</option>
@@ -149,7 +164,7 @@ class Matching extends Component{
                       <option value="้้hard6">6</option>
                       <option value="้้hard7">7</option>
                       <option value="้้hard8">8</option>
-                    </select>
+                    </select> */}
                   </div>
                 </div>
 
@@ -158,7 +173,9 @@ class Matching extends Component{
                     <label htmlFor="name">ต้องแต่งตัวเรียบร้อย</label>
                   </div>
                   <div className="col-75">
-                    <select id="dress" name="dress">
+                  <Star />
+
+                    {/* <select id="dress" name="dress">
                     <option value="้dress1">1</option>
                       <option value="้dress2">2</option>
                       <option value="้dress3">3</option>
@@ -167,7 +184,7 @@ class Matching extends Component{
                       <option value="้dress6">6</option>
                       <option value="้dress7">7</option>
                       <option value="้dress8">8</option>
-                    </select>
+                    </select> */}
                   </div>
                 </div>
 
@@ -176,7 +193,9 @@ class Matching extends Component{
                     <label htmlFor="name">เรียนไม่เต็มเวลา</label>
                   </div>
                   <div className="col-75">
-                    <select id="time" name="time">
+                  <Star />
+
+                    {/* <select id="time" name="time">
                     <option value="้time1">1</option>
                       <option value="้time2">2</option>
                       <option value="้time3">3</option>
@@ -185,7 +204,7 @@ class Matching extends Component{
                       <option value="้time6">6</option>
                       <option value="้time7">7</option>
                       <option value="้time8">8</option>
-                    </select>
+                    </select> */}
                   </div>
                 </div>
                 

@@ -7,6 +7,8 @@ import Navigation from './components/Navigation';
 import FindArticle from './views/FindArticle';
 import Matching from './views/Matching';
 import CreateArticle from './views/CreateArticle';
+import star from './components/star';
+
 // import ModalWrapper from './ModalWrapper';
 
 
@@ -26,6 +28,8 @@ ReactDOM.render(
     <Route path="/Navigation" component={Navigation}/>
     <Route path="/FindArticle" component={FindArticle}/>
     <Route path="/Matching" component={Matching}/>
+    <Route path="/star" component={star}/>
+
 
     {/* <Route path="/ModalWrapper" component={ModalWrapper}/> */}
     <Route path="/CreateArticle" component={CreateArticle}/>
