@@ -1,7 +1,9 @@
 import React, { Component } from 'react';
-import Navigation from '../components/Navigation';
-import '../components/create.css';
+import '../assets/css/create.css';
+import '../assets/css/header.css';
 import arrows from '../assets/image/arrows.png'
+import logo from '../assets/image/logo.png'
+
 
 
 
@@ -24,37 +26,24 @@ class CreateArticle extends Component{
       return(
   
 <div>
-<Navigation />
+<header><a href="/" ><img src={logo} alt="Logo"/> </a> </header>
+        <nav>
+          <ul>
+            <li><a href="/">หน้าแรก</a></li>
+            <li><a href="/CreateArticle" className="active">สร้างบทความใหม่</a></li>
 
+            <li><a href="/Matching">หาวิชาที่เหมาะกับฉัน</a></li>
 
-<br></br>
-     <br></br>
+            <li><a href="/FindArticle">ค้นหาบทความ</a></li>
 
-     <br></br>
+            <li><a href="/Login">เข้าสู่ระบบ</a></li>
 
-     <br></br>
-     <br></br>
-     <br></br>
-     <br></br>
-     <br></br>
-     <br></br>
-     <br></br>
-     <br></br>
-     <br></br>
-     <br></br>
-     <br></br>
-     <br></br>
-     <br></br>
-     <br></br>
-     <br></br>
-     <br></br>
-     <br></br>
+            
 
-     <br></br>
+          </ul>
+        </nav>
+        <section className="sec1" />
 
-     <br></br>
-
-     <br></br>
 <section className="Add">
         <div className="container">
           <div className="register_form">

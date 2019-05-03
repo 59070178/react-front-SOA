@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
-import Navigation from '../components/Navigation';
-import StarRatingComponent from 'react-star-rating-component';
-import '../components/create.css';
+import logo from '../assets/image/logo.png'
+import '../assets/css/create.css';
+import '../assets/css/header.css';
 import Star from '../components/star'
 
 class Matching extends Component{
@@ -24,37 +24,23 @@ class Matching extends Component{
     return(
 
       <div>
-<Navigation />
+<header><a href="/" ><img src={logo} alt="Logo"/> </a> </header>
+        <nav>
+          <ul>
+            <li><a href="/">หน้าแรก</a></li>
+            <li><a href="/CreateArticle">สร้างบทความใหม่</a></li>
 
-<br></br>
-   <br></br>
+            <li><a href="/Matching" className="active">หาวิชาที่เหมาะกับฉัน</a></li>
 
-   <br></br>
+            <li><a href="/FindArticle">ค้นหาบทความ</a></li>
 
-   <br></br>
-   <br></br>
-   <br></br>
-   <br></br>
-   <br></br>
-   <br></br>
-   <br></br>
-   <br></br>
-   <br></br>
-   <br></br>
-   <br></br>
-   <br></br>
-   <br></br>
-   <br></br>
-   <br></br>
-   <br></br>
-   <br></br>
+            <li><a href="/Login">เข้าสู่ระบบ</a></li>
 
-   <br></br>
+            
 
-   <br></br>
-
-   <br></br>
-
+          </ul>
+        </nav>
+        <section className="sec1" />
    <section className="Add">
       <div className="container">
         <div className="register_form">

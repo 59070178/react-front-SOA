@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
-import Navigation from '../components/Navigation';
-import '../components/create.css';
+import '../assets/css/create.css';
+import '../assets/css/header.css';
+import logo from '../assets/image/logo.png'
 
 class FindArticle extends Component{
 
@@ -8,36 +9,24 @@ class FindArticle extends Component{
       return(
   
         <div>
+<header><a href="/" ><img src={logo} alt="Logo"/> </a> </header>
+        <nav>
+          <ul>
+            <li><a href="/">หน้าแรก</a></li>
+            <li><a href="/CreateArticle">สร้างบทความใหม่</a></li>
 
-<Navigation />
-<br></br>
-     <br></br>
+            <li><a href="/Matching">หาวิชาที่เหมาะกับฉัน</a></li>
 
-     <br></br>
+            <li><a href="/FindArticle" className="active">ค้นหาบทความ</a></li>
 
-     <br></br>
-     <br></br>
-     <br></br>
-     <br></br>
-     <br></br>
-     <br></br>
-     <br></br>
-     <br></br>
-     <br></br>
-     <br></br>
-     <br></br>
-     <br></br>
-     <br></br>
-     <br></br>
-     <br></br>
-     <br></br>
-     <br></br>
+            <li><a href="/Login">เข้าสู่ระบบ</a></li>
 
-     <br></br>
+            
 
-     <br></br>
+          </ul>
+        </nav>
+        <section className="sec1" />
 
-     <br></br>
 
      <section className="Add">
         <div className="container">

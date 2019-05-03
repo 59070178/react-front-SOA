@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
-import Navigation from '../components/Navigation';
-import image from "../assets/image/home-banner.jpg";
+import '../assets/css/create.css';
+import '../assets/css/header.css';
+import logo from '../assets/image/logo.png'
 
 
 
@@ -50,14 +51,26 @@ class App extends Component {
     return (
       <div>
 
-<Navigation />
+<header><a href="/" ><img src={logo} alt="Logo"/> </a> </header>
+        <nav>
+          <ul>
+            <li><a href="/" className="active" >หน้าแรก</a></li>
+            <li><a href="/CreateArticle">สร้างบทความใหม่</a></li>
 
-<img src={image} />
+            <li><a href="/Matching">หาวิชาที่เหมาะกับฉัน</a></li>
+
+            <li><a href="/FindArticle">ค้นหาบทความ</a></li>
+
+            <li><a href="/Login">เข้าสู่ระบบ</a></li>
+
+            
+
+          </ul>
+        </nav>
+        <section className="sec1" />
 
 
         <h1>Hello World</h1>
-        <h1><a href="/Content">Content</a></h1>
-
 
         <h1><a href="/FindArticle">Find Article</a></h1>
 
@@ -78,9 +91,7 @@ class App extends Component {
          
           </div>
 
-
-//<Header />
-        //  <Content title = "Practice " name = "Aew" />        
+   
      
         
 
