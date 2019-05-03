@@ -77,7 +77,9 @@ class App extends Component {
         <h1><a href="/Matching">Matching</a></h1>
 
         <h1><a href="/CreateArticle">Create Article</a></h1>
-        <h1><a href="/star">Star</a></h1>
+        <h1><a href="/Filter">Filter</a></h1>
+        <h1><a href="/Filter2">Filter2</a></h1>
+
 
 
 

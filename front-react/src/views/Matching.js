@@ -51,7 +51,7 @@ class Matching extends Component{
            
                 <div className="row">
                   <div className="col-25">
-                    <label htmlFor="name">มีงานเดี่ยว / งานกลุ่ม</label>
+                    <label htmlFor="name">งานกลุ่ม</label>
                   </div>
                   <div className="col-75">
 
@@ -112,27 +112,6 @@ class Matching extends Component{
                     </select> */}
                   </div>
                 </div>
-            
-                <div className="row">
-                  <div className="col-25">
-                    <label htmlFor="name">สุ่มเกรด</label>
-                  </div>
-                  <div className="col-75">
-                  <Star />
-
-                    {/* <select id="random" name="random">
-                    <option value="้random1">1</option>
-                      <option value="้random2">2</option>
-                      <option value="้random3">3</option>
-                      <option value="้random4">4</option>
-                      <option value="้random5">5</option>
-                      <option value="้random6">6</option>
-                      <option value="้random7">7</option>
-                      <option value="้random8">8</option>
-                    </select> */}
-                  </div>
-                </div>
-
 
                 <div className="row">
                   <div className="col-25">
@@ -154,45 +133,6 @@ class Matching extends Component{
                   </div>
                 </div>
 
-                <div className="row">
-                  <div className="col-25">
-                    <label htmlFor="name">ต้องแต่งตัวเรียบร้อย</label>
-                  </div>
-                  <div className="col-75">
-                  <Star />
-
-                    {/* <select id="dress" name="dress">
-                    <option value="้dress1">1</option>
-                      <option value="้dress2">2</option>
-                      <option value="้dress3">3</option>
-                      <option value="้dress4">4</option>
-                      <option value="้dress5">5</option>
-                      <option value="้dress6">6</option>
-                      <option value="้dress7">7</option>
-                      <option value="้dress8">8</option>
-                    </select> */}
-                  </div>
-                </div>
-
-                <div className="row">
-                  <div className="col-25">
-                    <label htmlFor="name">เรียนไม่เต็มเวลา</label>
-                  </div>
-                  <div className="col-75">
-                  <Star />
-
-                    {/* <select id="time" name="time">
-                    <option value="้time1">1</option>
-                      <option value="้time2">2</option>
-                      <option value="้time3">3</option>
-                      <option value="้time4">4</option>
-                      <option value="้time5">5</option>
-                      <option value="้time6">6</option>
-                      <option value="้time7">7</option>
-                      <option value="้time8">8</option>
-                    </select> */}
-                  </div>
-                </div>
                 
                 </form>
               </div> 
