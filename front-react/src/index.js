@@ -9,6 +9,7 @@ import Login from './views/Login';
 import Filter from './views/Filter';
 import Filter2 from './views/Filter2';
 import star from './components/star';
+import Article from './views/Article';
 
 // import ModalWrapper from './ModalWrapper';
 
@@ -32,6 +33,7 @@ ReactDOM.render(
     <Route path="/Login" component={Login}/>
     <Route path="/Filter" component={Filter}/>
     <Route path="/Filter2" component={Filter2}/>
+    <Route path="/Article" component={Article}/>
 
 
 

@@ -6,14 +6,9 @@ import StarRatings from 'react-star-ratings';
 class star extends React.Component {
   constructor() {
     super();
-
-    
- 
     this.state = {
       rating: 1
     };
-
-    
   }
 
  
@@ -21,8 +16,6 @@ class star extends React.Component {
     this.setState({rating: nextValue});
   }
 
-  
- 
   render() {
     const { rating } = this.state;
 
@@ -34,7 +27,6 @@ class star extends React.Component {
       <div> <center>
         {/* <h2>Rating from state: {rating}</h2> */}
 
-      
         <StarRatingComponent          
           name="rate1" 
           size={40}

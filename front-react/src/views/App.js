@@ -2,32 +2,34 @@ import React, { Component } from 'react';
 import '../assets/css/create.css';
 import '../assets/css/header.css';
 import logo from '../assets/image/logo.png'
+import Thumbnail from '../components/Thumbnail';
+import Suggestion from '../components/Suggestion';
 
 
 
 class App extends Component {
 
-  constructor(){
+  constructor() {
     super();
-    this.state={
-        data:[],
-        isOpen: false,
-        message:"Un Like",
-        type:""
+    this.state = {
+      data: [],
+      isOpen: false,
+      message: "Un Like",
+      type: ""
     };
-    this.changeMessage=this.changeMessage.bind(this);
+    this.changeMessage = this.changeMessage.bind(this);
 
-    this.toggleCollapse=this.toggleCollapse.bind(this);
+    this.toggleCollapse = this.toggleCollapse.bind(this);
     // this.insertData=this.insertData.bind(this);
   }
- 
-  
+
+
   toggleCollapse = () => {
     this.setState({ isOpen: !this.state.isOpen });
   }
-  
-  changeMessage(){
-      this.setState({message:"Like"});
+
+  changeMessage() {
+    this.setState({ message: "Like" });
   }
 
 
@@ -41,7 +43,7 @@ class App extends Component {
   // onChange(event){
   //   this.setState({type:event.target.value})
   // }
-  
+
   render() {
 
     // var mystyle={
@@ -51,7 +53,7 @@ class App extends Component {
     return (
       <div>
 
-<header><a href="/" ><img src={logo} alt="Logo"/> </a> </header>
+        <header><a href="/" ><img src={logo} alt="Logo" /> </a> </header>
         <nav>
           <ul>
             <li><a href="/" className="active" >หน้าแรก</a></li>
@@ -63,51 +65,18 @@ class App extends Component {
 
             <li><a href="/Login">เข้าสู่ระบบ</a></li>
 
-            
+
 
           </ul>
         </nav>
         <section className="sec1" />
 
-
-        <h1>Hello World</h1>
-
-        <h1><a href="/FindArticle">Find Article</a></h1>
-
-        <h1><a href="/Matching">Matching</a></h1>
-
-        <h1><a href="/CreateArticle">Create Article</a></h1>
-        <h1><a href="/Filter">Filter</a></h1>
-        <h1><a href="/Filter2">Filter2</a></h1>
-
-
-
-
-        <h1>{this.state.message}</h1><br/>
-    
+        <Suggestion />
+        <Thumbnail />
+        </div>
+          );
+        }
+      }
       
-
-
-        <button type="button" class="btn btn-outline-primary" onClick={this.changeMessage}>{this.state.message}</button><br/>
-        
-         
-          </div>
-
-   
-     
-        
-
-        //  <h1>{this.state.data}</h1>
-        //  <button onClick={this.insertData} >Insert</button><br/>
-        //  <input type="text" onChange={this.onChange.bind(this)}/>
-        //  <h1>Welcome : {this.state.type}</h1> 
-        
-
-
-    
-    );
-  }
-}
-
-
+      
 export default App;
