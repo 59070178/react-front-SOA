@@ -4,6 +4,8 @@ import '../assets/css/create.css';
 import '../assets/css/header.css';
 import logo from '../assets/image/logo.png'
 import { Button,Card } from 'react-bootstrap';
+import Star from '../components/star'
+
 
 class AllArticleOfSubject extends Component{
 
@@ -31,9 +33,9 @@ class AllArticleOfSubject extends Component{
 
 
         <center>
-            <h1>ชื่อวิชา</h1><br/>
-            <h3>หมวดสังคม</h3><br/>
-            <h3>เกรดเฉลี่ยรวม A</h3><br/>
+            <h1>ชื่อวิชา</h1>
+            <h3>หมวดสังคม
+            , เกรดเฉลี่ยรวม A</h3>
 
 
             </center>
@@ -45,8 +47,8 @@ class AllArticleOfSubject extends Component{
             <Card>
   <Card.Body>
     <Card.Title>หัวข้อบทความ</Card.Title>
-    <Card.Text>
-      คะแนนเป็นดาวๆ
+    <Card.Text >
+     <Star fa-pull-left />
     </Card.Text>
     <Button variant="primary">อ่านบทความ</Button>
   </Card.Body>
