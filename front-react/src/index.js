@@ -6,8 +6,8 @@ import FindArticle from './views/FindArticle';
 import Matching from './views/Matching';
 import CreateArticle from './views/CreateArticle';
 import Login from './views/Login';
-import Filter from './views/Filter';
-import Filter2 from './views/Filter2';
+import AllArticleOfSubject from './views/AllArticleOfSubject';
+
 import star from './components/star';
 
 // import ModalWrapper from './ModalWrapper';
@@ -30,8 +30,8 @@ ReactDOM.render(
     <Route path="/star" component={star}/>
     <Route path="/CreateArticle" component={CreateArticle}/>
     <Route path="/Login" component={Login}/>
-    <Route path="/Filter" component={Filter}/>
-    <Route path="/Filter2" component={Filter2}/>
+    <Route path="/AllArticleOfSubject" component={AllArticleOfSubject}/>
+
 
 
 
