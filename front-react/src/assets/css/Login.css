@@ -10,12 +10,7 @@
     background: #ffffff;
     margin: 100px auto;
   }
-  
-  form label, form input {
-    display: block;
-    //margin-bottom: 10px;
-    width: 90%
-  }
+
   
   form input {
     padding: 10px;
