@@ -71,6 +71,7 @@ class App extends Component {
         </nav>
         <section className="sec1" />
 
+
         <Suggestion />
         <Thumbnail />
         </div>
@@ -78,5 +79,6 @@ class App extends Component {
         }
       }
       
+
       
 export default App;

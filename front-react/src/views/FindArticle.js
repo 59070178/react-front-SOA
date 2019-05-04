@@ -5,6 +5,16 @@ import logo from '../assets/image/logo.png'
 
 class FindArticle extends Component{
 
+  constuctor() {
+    this.routeChange = this.routeChange.bind(this);
+  }
+
+  routeChange() {
+    let path = "/AllArticleOfSubject";
+    this.props.history.push(path);
+  }
+
+
     render(){
       return(
   
@@ -77,7 +87,8 @@ class FindArticle extends Component{
                 <br></br>
 
                 <br></br>
-                  <button className="primary-btn">ค้นหา</button>
+                <a href="/AllArticleOfSubject">
+                  <button className="primary-btn"  onClick={this.routeChange}>ค้นหา</button> </a>
                 </div>
               </div>
         
