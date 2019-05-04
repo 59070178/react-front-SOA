@@ -10,7 +10,7 @@ class Comment extends Component {
                         <div class="col-lg-12">
 
                             <div className="media mb-4">
-                                <img className="d-flex mr-3 rounded-circle" src="http://placehold.it/50x50" alt />
+                                <img className="d-flex mr-3 rounded-circle" src="http://placehold.it/50x50" alt="" />
                                 <div className="media-body">
                                     <h5 className="mt-0">อิ๋วอิ๋วชอบกินเผ็ด</h5>
                                     ไม่เคยชอบเรียนวิชาไหน เท่าวิชานี้มาก่อน
@@ -19,7 +19,7 @@ class Comment extends Component {
 
                             {/* comment2 */}
                             <div className="media mb-4">
-                                <img className="d-flex mr-3 rounded-circle" src="http://placehold.it/50x50" alt />
+                                <img className="d-flex mr-3 rounded-circle" src="http://placehold.it/50x50" alt=""   />
                                 <div className="media-body">
                                     <h5 className="mt-0">จุ๊กจิ๊ก</h5>
                                     บอกได้ว่า I LOVE MICROSERVICE ทั้งใจ //ปาหัวใจจจ

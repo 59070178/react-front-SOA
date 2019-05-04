@@ -11,8 +11,6 @@ import AllArticleOfSubject from './views/AllArticleOfSubject';
 import star from './components/star';
 import Article from './views/Article';
 
-// import ModalWrapper from './ModalWrapper';
-
 
 
 
@@ -33,6 +31,8 @@ ReactDOM.render(
     <Route path="/Login" component={Login}/>
 
     <Route path="/AllArticleOfSubject" component={AllArticleOfSubject}/>
+    <Route path="/Article" component={Article}/>
+
 
 
 
