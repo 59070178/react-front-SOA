@@ -87,7 +87,8 @@ class FindArticle extends Component{
                 <br></br>
 
                 <br></br>
-                  <button className="primary-btn"  onClick={this.routeChange}>ค้นหา</button>
+                <a href="/AllArticleOfSubject">
+                  <button className="primary-btn"  onClick={this.routeChange}>ค้นหา</button> </a>
                 </div>
               </div>
         
